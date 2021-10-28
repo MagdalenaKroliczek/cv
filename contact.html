@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="/cv/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/cv/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+
+  <title>Structure page HTML</title>
+</head>
+<body>
+  <header>
+    <figure>
+      <!--Cesi une image-->
+
+      <img src="https://picsum.photos/1600/300" alt="Photo Deco">
+<!--       <figcaption>Rima</figcaption> -->
+     </figure> 
+    <nav>
+      <ul class="nav-header">
+        <li><a href="#apropos" title="A propos">A propos </a></li> 
+        <li><a href="#competances" title="Mes Compétences">Compétences</a></li>
+        <li><a href="#exp" title="Expérience Professionneles">Expérience</a></li>
+        <li><a href="#formation" title="Formation">Formation</a></li>
+        <li><a href="#contact" title="Contactez-moi">Contact</a></li>     
+      </ul>
+      
+    </nav>
+     <h1>Contact</h1>
+  </header>
+  <body>
+    <form action="contact.php" method="post">
+        <fieldset>
+          <div>
+            <label for="username">Nom: </label>
+            <input type="text" id="username" name="username" placeholder="Nom" required>
+          </div>
+          <div>
+            <label for="username">Prenom: </label>
+            <input type="text" id="username" name="username" placeholder="prenom" required>     
+          </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="phone">Téléphone : </label>
+                <input type="phone" id="phone" name="phone" placeholder="numero de télephoné"><br><br>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br><br>
+          </fieldset>
+
+          <fieldset>
+            <h2>Le type de contrat</h2>
+            <label for="spa">Sélectionnez le type de contrat : </label>
+            <select name="spa" id="spa">
+              <option value="" selected>sélectionnez le type de contrat</option>
+              <option value="cdi">CDI</option>
+              <option value="interim">Interim</option>
+              <option value="freelance">Freelance</option>
+            </select>
+          </fieldset>
+
+
+          <input type="submit" value="Envoyer">
+          <button type="reset">Annuler</button>   
+        
+
+  </body>
+  </html>
