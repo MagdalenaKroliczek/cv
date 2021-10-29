@@ -7,16 +7,18 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/cv/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-
+  <link rel="stylesheet" href="assets/css/reaset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <title>Structure page HTML</title>
+
 </head>
 <body>
   <header>
     <figure>
       <!--Cesi une image-->
 
-      <img src="https://picsum.photos/1600/300" alt="Photo Deco">
+      <img src="assets/img/dev-worker_x2100.jpg" alt="Photo Deco" srcset="assets/img/dev-worker_x2100.jpg 2100w, assets/img/dev-worker_x1550.jpg 1500w, assets/img/dev-worker_x755.jpg 755w, assets/img/dev-worker_x390.jpg 390w" sizes=" (min-with:400) 755px,(min-with:960) 1550px, (min-with:1600) 2100px; 100vw">
 <!--       <figcaption>Rima</figcaption> -->
      </figure> 
     <nav>
@@ -32,7 +34,7 @@
     </nav>
      <h1>Développeur Front-end</h1>
   </header>
-  <main>
+  <main id="main">
   <section id="apropos">
 
       <header>
@@ -132,7 +134,7 @@
       </table>
     
   </section>
-    <section id="formations">
+    <section id="formation">
 
     <h2>Mes Formations</h2>
     <article>
@@ -170,7 +172,7 @@
     </section>
     </main>
   
-  <footer>  
+  <footer id="footer">  
     <div><span><i class="fab fa-facebook"></i></span><span><i class="fab fa-linkedin"></i></span><span><i class="fab fa-twitter"></i>
 
     </span></div>
