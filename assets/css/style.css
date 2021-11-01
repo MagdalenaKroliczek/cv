@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url("../assets/fonts/Roboto/roboto.woff format") format("woff");
+    font-family: "Robot";
+    src: url("/assets/fonts/Roboto/roboto.woff format") format("woff");
     font-display: swap;
 }
+
 
 #footer{
     background: url(../img/bg-motif.jpg);
