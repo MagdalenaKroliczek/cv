@@ -4,15 +4,34 @@
     font-display: swap;
 }
 
-
+body{
+  background-color: silver;
+  opacity: 0.8;
+}
 #footer{
     background: url(../img/bg-motif.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     height: 300px;
     margin-top: 50px;
+    padding: 10px;
     
 }
+
+
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: red;
+   font-style: italic;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
+
 #main{
     width: 80%;
     margin: 0 auto;
@@ -35,9 +54,44 @@ nav ul {
     background-color: silver;
     height: 50px;
     margin: 0 auto;
+    list-style:none;
+   
+    
 }
 
 nav ul li{
-    margin-right: 20px;
+    margin-right: 10px;
     float: left;
+ 
+  
+}
+nav ul li a{
+  color: black;
+  font-family: impact;
+}
+
+aside ul li{
+  font-style: 25px;
+  font-family:Georgia;
+/*   text-align: center; */
+  list-style: none;
+  margin: 5px 5px;
+  padding:3px;
+  
+}
+
+
+h2{
+  font-style: 20px;
+  font-family: Courier New;
+  color: green;
+  
+}
+
+h4{
+  text-decoration: underline;
+}
+
+#obok{
+  display:flex;
 }
